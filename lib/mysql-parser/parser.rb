@@ -13,7 +13,8 @@ require 'racc/parser.rb'
     Marshal.load(Marshal.dump(o))
   end
 
-class MySQLParser < Racc::Parser
+module MysqlParser
+  class MySQLParser < Racc::Parser
 
 module_eval(<<'...end mysql.y.rb/module_eval...', 'mysql.y.rb', 1252)
   def initialize
@@ -5638,4 +5639,5 @@ def _reduce_none(val, _values)
   val[0]
 end
 
-end   # class MySQLParser
+  end   # class MySQLParser
+  end   # module MysqlParser

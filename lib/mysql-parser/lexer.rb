@@ -5,7 +5,7 @@
 #++
 
 require 'racc/parser'
-class MySQLParser < Racc::Parser
+class MysqlParser::MySQLParser < Racc::Parser
   require 'strscan'
 
   class ScanError < StandardError ; end

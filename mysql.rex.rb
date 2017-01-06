@@ -1,4 +1,4 @@
-class MySQLParser
+class MysqlParser::MySQLParser
 
 option
   ignorecase

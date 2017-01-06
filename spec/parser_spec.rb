@@ -8,7 +8,7 @@ class MySQLParserTester
     end
 
     before(:each) do
-      @evaluator = MySQLParser.new
+      @evaluator = MysqlParser::MySQLParser.new
     end
 
     it 'tests for drop foreign key' do
