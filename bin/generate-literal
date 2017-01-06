@@ -1,7 +1,7 @@
 #!/usr/bin/ruby
 
 require 'set'
-require_relative '../lib/helper'
+require_relative '../lib/mysql-parser/helper'
 
 parser_filename = 'mysql.y.rb'
 lexer_filename = 'mysql.rex.rb'
